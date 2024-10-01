@@ -29,9 +29,9 @@
             height: auto;
         }
 
-        /* Hide the additional image by default */
+        /* Specific styling for the image above the h1 */
         #above-h1-image {
-            display: none;
+            max-width: 30%; /* Change this value to control the size */
         }
 
         /* Media Query for smaller screens */
@@ -42,26 +42,19 @@
             img {
                 max-width: 20%;
             }
-            
-            /* Show the image above the h1 only on small screens */
-            #above-h1-image {
-                display: block;
-                margin-bottom: 20px;
-            }
-        }
 
-        /* Media Query for larger screens */
-        @media (min-width: 1200px) {
-            h1 {
-                font-size: 8vw;
+            #above-h1-image {
+                max-width: 40%; /* Change the size for smaller screens if needed */
             }
         }
     </style>
 </head>
 <body>
-    <!-- Image that will appear above the h1 on smaller screens -->
-   <img src="https://github.com/RV-Spidey/Deep-web-v4/blob/main/png/troll.jpg?raw=true" alt="My Sign">
+    <!-- Image that will appear above the h1 -->
+    <img id="above-h1-image" src="https://github.com/RV-Spidey/Deep-web-v4/blob/main/png/troll.jpg?raw=true" alt="My Sign">
+    
     <h1>Website Terminated</h1>
+    
     <img src="https://github.com/RV-Spidey/Deep-web-v4/blob/main/png/mysign.png?raw=true" alt="My Sign">
 </body>
 </html>
